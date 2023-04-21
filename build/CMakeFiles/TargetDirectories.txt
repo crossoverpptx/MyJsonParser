@@ -1,0 +1,5 @@
+E:/Code/VSCode/MyJsonParser/build/CMakeFiles/main.dir
+E:/Code/VSCode/MyJsonParser/build/CMakeFiles/edit_cache.dir
+E:/Code/VSCode/MyJsonParser/build/CMakeFiles/rebuild_cache.dir
+E:/Code/VSCode/MyJsonParser/build/json/CMakeFiles/edit_cache.dir
+E:/Code/VSCode/MyJsonParser/build/json/CMakeFiles/rebuild_cache.dir

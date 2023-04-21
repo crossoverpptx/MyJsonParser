@@ -1,0 +1,17 @@
+[
+{
+  "directory": "E:/Code/VSCode/MyJsonParser/build",
+  "command": "D:\\envs\\mingw-w64-gcc-13.0.1\\ucrt64\\bin\\g++.exe  @CMakeFiles/main.dir/includes_CXX.rsp -g -o CMakeFiles\\main.dir\\main.cpp.obj -c E:\\Code\\VSCode\\MyJsonParser\\main.cpp",
+  "file": "E:/Code/VSCode/MyJsonParser/main.cpp"
+},
+{
+  "directory": "E:/Code/VSCode/MyJsonParser/build",
+  "command": "D:\\envs\\mingw-w64-gcc-13.0.1\\ucrt64\\bin\\g++.exe  @CMakeFiles/main.dir/includes_CXX.rsp -g -o CMakeFiles\\main.dir\\json\\json.cpp.obj -c E:\\Code\\VSCode\\MyJsonParser\\json\\json.cpp",
+  "file": "E:/Code/VSCode/MyJsonParser/json/json.cpp"
+},
+{
+  "directory": "E:/Code/VSCode/MyJsonParser/build",
+  "command": "D:\\envs\\mingw-w64-gcc-13.0.1\\ucrt64\\bin\\g++.exe  @CMakeFiles/main.dir/includes_CXX.rsp -g -o CMakeFiles\\main.dir\\json\\parser.cpp.obj -c E:\\Code\\VSCode\\MyJsonParser\\json\\parser.cpp",
+  "file": "E:/Code/VSCode/MyJsonParser/json/parser.cpp"
+}
+]
