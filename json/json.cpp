@@ -3,9 +3,10 @@
 #include <stdexcept>
 #include <sstream>
 
-using namespace myjson::json;
+using namespace crossoverpptx::json;
+using namespace std;
 
-Json::Json() : m_type(json_null) {  // 默认构造函数即传入空值，在初始化列表传入即可
+Json::Json() : m_type(json_null) {  // 默认构造函数即传入空值
 
 }
 
@@ -21,12 +22,12 @@ Json::Json(double value) : m_type(json_double) {
     m_value.m_double = value;
 }
 
-Json::Json(const char * value) : m_type(json_string) {
-    m_value.m_string = new std::string(value);
+Json::Json(const char *value) : m_type(json_string) {
+    m_value.m_string = new string(value);
 }   
 
-Json::Json(const std::string & value) : m_type(json_string) {
-    m_value.m_string = new std::string(value);
+Json::Json(const string &value) : m_type(json_string) {
+    m_value.m_string = new string(value);
 }
 
 Json::Json(Type type) : m_type(type) {
@@ -43,99 +44,100 @@ Json::Json(Type type) : m_type(type) {
             m_value.m_double = 0.0;
             break;
         case json_string:
-            m_value.m_string = new std::string("");
+            m_value.m_string = new string("");
             break;
         case json_array:
-            m_value.m_array = new std::vector<Json>();
+            m_value.m_array = new vector<Json>();
             break;
         case json_object:
-            m_value.m_object = new std::map<std::string, Json>();
+            m_value.m_object = new map<string, Json>();
             break;
         default:
             break;
     }
 }
 
-Json::Json(const Json & other) {
+Json::Json(const Json &other) {
     copy(other);
 }
 
-// 运算符重载
+// 基本类型的运算符重载
 Json::operator bool() {
     if (m_type != json_bool) {
-        throw std::logic_error("type error, not bool value");
+        throw new logic_error("type error, not bool value");
     }
     return m_value.m_bool;
 }
 
 Json::operator int() {
     if (m_type != json_int) {
-        throw std::logic_error("type error, not int value");
+        throw new logic_error("type error, not int value");
     }
     return m_value.m_int;
 }
 
 Json::operator double() {
     if (m_type != json_double) {
-        throw std::logic_error("type error, not double value");
+        throw new logic_error("type error, not double value");
     }
     return m_value.m_double;
 }
 
-Json::operator std::string() {
+Json::operator string() {
     if (m_type != json_string) {
-        throw std::logic_error("type error, not string value");
+        throw new logic_error("type error, not string value");
     }
     return *(m_value.m_string); // 解引用，得到字符串的内容
 }
 
-// []运算符重载
-Json & Json::operator [] (int index) {
+// 数组[]运算符重载
+Json & Json::operator [] (int index) {  // 如果旧的值是指针的话，会导致内存泄漏。
     if (m_type != json_array) {
         m_type = json_array;
-        m_value.m_array = new std::vector<Json>();
+        m_value.m_array = new vector<Json>();
     }
     if (index < 0) {
-        throw std::logic_error("array[] index < 0");
+        throw new logic_error("array[] index < 0");
     }
     int size = (m_value.m_array)->size();
-    if (index >= size) {
+    if (index >= size) {    // 扩容
         for (int i = size; i <= index; i++) {
-            (m_value.m_array)->push_back(Json());
+            (m_value.m_array)->push_back(Json());   // 向数组中添加空的Json类型
         }
     }   
     return (m_value.m_array)->at(index);
 }
 
-void Json::append(const Json & other) {
+void Json::append(const Json &other) {  // 如果append的旧的值是指针的话，会导致内存泄漏。
     if (m_type != json_array) {
         clear();
         m_type = json_array;
-        m_value.m_array = new std::vector<Json>();
+        m_value.m_array = new vector<Json>();
     }
     (m_value.m_array)->push_back(other);
 }
 
-Json & Json::operator [] (const char * key) {
-    std::string name(key);
+Json & Json::operator [] (const char *key) {
+    string name(key);
     return (*(this))[name];
 }
 
-Json & Json::operator [] (const std::string & key) {
+Json & Json::operator [] (const string &key) {
     if (m_type != json_object) {
         clear();
         m_type = json_object;
-        m_value.m_object = new std::map<std::string, Json>();
+        m_value.m_object = new map<string, Json>();
     }
     return (*(m_value.m_object))[key];
 }
 
-void Json::operator = (const Json & other) {
+// 赋值运算符重载
+void Json::operator = (const Json &other) {
     clear();
     copy(other);
 }
 
-bool Json::operator == (const Json & other) {
+bool Json::operator == (const Json &other) {
     if (m_type != other.m_type) {
         return false;
     }
@@ -151,21 +153,22 @@ bool Json::operator == (const Json & other) {
         case json_string:
             return *(m_value.m_string) == *(other.m_value.m_string);
         case json_array:
-            return m_value.m_array == other.m_value.m_array; // 直接比较指针是否正确？
+            return m_value.m_array == other.m_value.m_array;    // 直接比较指针肯定不正确
         case json_object: 
-            return m_value.m_object == other.m_value.m_object; // 直接比较指针是否正确？
+            return m_value.m_object == other.m_value.m_object;  // 直接比较指针肯定不正确
         default:
             break;
     }
     return false;
 }
 
-bool Json::operator != (const Json & other) {
+bool Json::operator != (const Json &other) {
     return !(*(this) == other);
 }
 
-std::string Json::str() const {
-    std::stringstream ss;
+// 以字符串格式展示Json中的内容
+string Json::str() const {
+    stringstream ss;
     switch (m_type) {
         case json_null:
             ss << "null";
@@ -229,15 +232,13 @@ void Json::copy(const Json & other) {
             m_value.m_double = other.m_value.m_double;
             break;
         case json_string:
-            // 为了防止动态内存频繁地创建和拷贝，这里就不对内存做深度的拷贝，使用的是浅拷贝，即直接将other类型，如字符串的指针拷贝过来即可
-            // 可以极大地提升性能
             m_value.m_string = other.m_value.m_string;
             break;
         case json_array:
-            m_value.m_array = new std::vector<Json>();
+            m_value.m_array = other.m_value.m_array;
             break;
         case json_object:
-            m_value.m_object = new std::map<std::string, Json>();
+            m_value.m_object = other.m_value.m_object;
             break;
         default:
             break;
@@ -283,28 +284,28 @@ void Json::clear() {
 // 另外提供一个对基本运算符的显性的转换
 bool Json::asBool() const {
     if (m_type != json_bool) {
-        throw std::logic_error("type error, not bool value");
+        throw new logic_error("type error, not bool value");
     }
     return m_value.m_bool;
 }
 
 int Json::asInt() const {
     if (m_type != json_int) {
-        throw std::logic_error("type error, not int value");
+        throw new logic_error("type error, not int value");
     }
     return m_value.m_int;
 }
 
 double Json::asDouble() const {
     if (m_type != json_double) {
-        throw std::logic_error("type error, not double value");
+        throw new logic_error("type error, not double value");
     }
     return m_value.m_double;
 }
 
-std::string Json::asString() const {
+string Json::asString() const {
     if (m_type != json_string) {
-        throw std::logic_error("type error, not string value");
+        throw new logic_error("type error, not string value");
     }
     return *(m_value.m_string); // 解引用，得到字符串的内容
 }
@@ -318,12 +319,12 @@ bool Json::has(int index) {
     return (index >= 0 && index < size);
 }
 
-bool Json::has(const char * key) {
-    std::string name(key);
+bool Json::has(const char *key) {
+    string name(key);
     return has(name);
 }
 
-bool Json::has(const std::string & key) {
+bool Json::has(const string &key) {
     if (m_type != json_object) {
         return false;
     }
@@ -339,14 +340,16 @@ void Json::remove(int index) {
     if (index < 0 || index >= size) {
         return;
     }
-    (m_value.m_array)->at(index).clear();
-    (m_value.m_array)->erase((m_value.m_array)->begin() + index);
+    (m_value.m_array)->at(index).clear();   // 释放内存
+    (m_value.m_array)->erase((m_value.m_array)->begin() + index);   // 删除元素
 }
-void Json::remove(const char * key) {
-    std::string name(key);
+
+void Json::remove(const char *key) {
+    string name(key);
     remove(name);
 }
-void Json::remove(const std::string & key) {
+
+void Json::remove(const string &key) {
     auto it = (m_value.m_object)->find(key);
     if (it == (m_value.m_object)->end()) {
         return;
@@ -355,7 +358,7 @@ void Json::remove(const std::string & key) {
     (m_value.m_object)->erase(key);
 }
 
-void Json::parse(const std::string & str) {
+void Json::parse(const string &str) {
     Parser p;
     p.load(str);
     *this = p.parse();

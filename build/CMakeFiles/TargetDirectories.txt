@@ -1,0 +1,5 @@
+E:/GitHub/MyJsonParser/build/CMakeFiles/main.dir
+E:/GitHub/MyJsonParser/build/CMakeFiles/edit_cache.dir
+E:/GitHub/MyJsonParser/build/CMakeFiles/rebuild_cache.dir
+E:/GitHub/MyJsonParser/build/json/CMakeFiles/edit_cache.dir
+E:/GitHub/MyJsonParser/build/json/CMakeFiles/rebuild_cache.dir

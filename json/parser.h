@@ -1,17 +1,16 @@
-#pragma once
+#ifndef PARSER_H
+#define PARSER_H
 
 #include "json.h"
 #include <string>
 
-namespace myjson {
+namespace crossoverpptx {
 namespace json {
 
 class Parser {
 public:
     Parser();
-
-    void load(const std::string & str); 
-
+    void load(const std::string &str); 
     Json parse();
 
 private:
@@ -28,5 +27,8 @@ private:
     std::string m_str;
     int m_idx;
 };
+
 }
 }
+
+#endif

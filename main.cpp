@@ -4,25 +4,26 @@
 #include <sstream>
 #include <iostream>
 
-using namespace myjson::json;
+using namespace crossoverpptx::json;
+using namespace std;
 
 int main() {
-    //const std::string & str = "\"hello\"";
-    const std::string & str = "[1,2,3]";
+    string json_path = "E:/GitHub/MyJsonParser/test.json";
+    ifstream fin(json_path);
+    stringstream ss;
+    ss << fin.rdbuf();
+    const string &str = ss.str();
+
     Json v;
-
     v.parse(str);
-    std::cout << v.str() << std::endl;
-    v.clear();
 
-    // std::ifstream fin("test.json");
-    // std::stringstream ss;
-    // ss << fin.rdbuf();
-    // const std::string & str = ss.str();
+    cout << v.str() << endl;
 
-    // Json v;
-    // v.parse(str);
-
-    // std::cout << v.str() << std::endl;
+    string face = v["data"]["face"];
+    int mid = v["data"]["mid"];
+    string text = v["data"]["vip_label"]["text"];
+    cout << "face : " << face << endl;
+    cout << "mid : " << mid << endl;
+    cout << "text : " << text << endl;
     return 0;
 }

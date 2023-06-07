@@ -1,0 +1,17 @@
+[
+{
+  "directory": "E:/GitHub/MyJsonParser/build",
+  "command": "D:\\envs\\mingw-w64-gcc-13.0.1\\ucrt64\\bin\\g++.exe  @CMakeFiles/main.dir/includes_CXX.rsp -g -o CMakeFiles\\main.dir\\main.cpp.obj -c E:\\GitHub\\MyJsonParser\\main.cpp",
+  "file": "E:/GitHub/MyJsonParser/main.cpp"
+},
+{
+  "directory": "E:/GitHub/MyJsonParser/build",
+  "command": "D:\\envs\\mingw-w64-gcc-13.0.1\\ucrt64\\bin\\g++.exe  @CMakeFiles/main.dir/includes_CXX.rsp -g -o CMakeFiles\\main.dir\\json\\json.cpp.obj -c E:\\GitHub\\MyJsonParser\\json\\json.cpp",
+  "file": "E:/GitHub/MyJsonParser/json/json.cpp"
+},
+{
+  "directory": "E:/GitHub/MyJsonParser/build",
+  "command": "D:\\envs\\mingw-w64-gcc-13.0.1\\ucrt64\\bin\\g++.exe  @CMakeFiles/main.dir/includes_CXX.rsp -g -o CMakeFiles\\main.dir\\json\\parser.cpp.obj -c E:\\GitHub\\MyJsonParser\\json\\parser.cpp",
+  "file": "E:/GitHub/MyJsonParser/json/parser.cpp"
+}
+]

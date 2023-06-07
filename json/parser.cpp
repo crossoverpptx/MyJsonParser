@@ -2,19 +2,21 @@
 #include <stdexcept>
 #include <iostream>
 
-using namespace myjson::json;
+using namespace crossoverpptx::json;
+using namespace std;
 
 Parser::Parser() : m_str(""), m_idx(0) {
 
 }
 
-void Parser::load(const std::string & str) {
+void Parser::load(const string &str) {
     m_str = str;
     m_idx = 0;
 }
 
 void Parser::skip_white_space() {
-    while (m_str[m_idx] == ' ' || m_str[m_idx] == '\n' || m_str[m_idx] == '\r' || m_str[m_idx] == '\t') {
+    while (m_str[m_idx] == ' ' || m_str[m_idx] == '\n' || 
+           m_str[m_idx] == '\r' || m_str[m_idx] == '\t') {
         m_idx++;
     }
 }
@@ -54,15 +56,13 @@ Json Parser::parse() {
         case '"':
             return Json(parse_string());
         case '[':
-            //std::cout << "duan dian 1" << std::endl;
             return parse_array();
-            //std::cout << "duan dian 2" << std::endl;
         case '{':
             return parse_object();
         default:
             break;
     }
-    throw std::logic_error("unexpected character in parse json");
+    throw new logic_error("unexpected character in parse json");
 }
 
 Json Parser::parse_null() {
@@ -70,7 +70,7 @@ Json Parser::parse_null() {
         m_idx += 4;
         return Json();
     }
-    throw std::logic_error("parse null error");
+    throw new logic_error("parse null error");
 }
 
 Json Parser::parse_bool() {
@@ -81,7 +81,7 @@ Json Parser::parse_bool() {
         m_idx += 5;
         return Json(false);
     }
-    throw std::logic_error("parse bool error");
+    throw new logic_error("parse bool error");
 }
 
 Json Parser::parse_number() {
@@ -91,7 +91,7 @@ Json Parser::parse_number() {
     }
 
     if (m_str[m_idx] < '0' || m_str[m_idx] > '9') {
-        throw std::logic_error("parse number error");
+        throw new logic_error("parse number error");
     }
     while (m_str[m_idx] >= '0' && m_str[m_idx] <= '9') {
         m_idx++;
@@ -101,9 +101,10 @@ Json Parser::parse_number() {
         int i = std::atoi(m_str.c_str() + pos);
         return Json(i);
     }
+
     m_idx++;
     if (m_str[m_idx] < '0' || m_str[m_idx] > '9') {
-        throw std::logic_error("parse number error");
+        throw new logic_error("parse number error");
     }
     while (m_str[m_idx] >= '0' && m_str[m_idx] <= '9') {
         m_idx++;
@@ -159,10 +160,11 @@ std::string Parser::parse_string() {
     return out;
 }   
 
+/*[1,2,3]*/
 Json Parser::parse_array() {
     Json arr(Json::json_array);
     char ch = get_next_token();
-    if (ch == ']') {    // 空数组
+    if (ch == ']') {    // 说明是空数组
         return arr;
     }
     m_idx--;
@@ -173,10 +175,11 @@ Json Parser::parse_array() {
             break;
         }
         if (ch != ',') {
-            throw std::logic_error("parse array error");
+            throw new logic_error("parse array error");
         }
+        // m_idx++; 
     }
-    return arr;
+    return arr; 
 }
 
 Json Parser::parse_object() {
@@ -189,12 +192,12 @@ Json Parser::parse_object() {
     while (true) {
         ch = get_next_token();
         if (ch != '"') {
-            throw std::logic_error("parse object error");
+            throw new logic_error("parse object error");
         }
-        std::string key = parse_string();
+        string key = parse_string();
         ch = get_next_token();
         if (ch != ':') {
-            throw new std::logic_error("parse object error");
+            throw new logic_error("parse object error");
         }
         obj[key] = parse();
         ch = get_next_token();
@@ -202,9 +205,9 @@ Json Parser::parse_object() {
             break;
         }
         if (ch != ',') {
-            throw std::logic_error("parse object error");
+            throw new logic_error("parse object error");
         }
-        //m_idx++;
+        m_idx++;
     }
     return obj;
 }
