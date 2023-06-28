@@ -1,4 +1,4 @@
-# MyJsonParser
+# TinyJsonParser
 一个基于C++的简单Json解析器
 
 ## 涉及的知识点
