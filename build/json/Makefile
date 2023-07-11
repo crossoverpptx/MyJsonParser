@@ -56,10 +56,10 @@ RM = D:\CMake\bin\cmake.exe -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = E:\GitHub\MyJsonParser
+CMAKE_SOURCE_DIR = E:\GitHub\TinyJsonParser
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = E:\GitHub\MyJsonParser\build
+CMAKE_BINARY_DIR = E:\GitHub\TinyJsonParser\build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -86,14 +86,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /d E:\GitHub\MyJsonParser\build && $(CMAKE_COMMAND) -E cmake_progress_start E:\GitHub\MyJsonParser\build\CMakeFiles E:\GitHub\MyJsonParser\build\json\\CMakeFiles\progress.marks
-	cd /d E:\GitHub\MyJsonParser\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 json/all
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\GitHub\MyJsonParser\build\CMakeFiles 0
+	cd /d E:\GitHub\TinyJsonParser\build && $(CMAKE_COMMAND) -E cmake_progress_start E:\GitHub\TinyJsonParser\build\CMakeFiles E:\GitHub\TinyJsonParser\build\json\\CMakeFiles\progress.marks
+	cd /d E:\GitHub\TinyJsonParser\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 json/all
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\GitHub\TinyJsonParser\build\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /d E:\GitHub\MyJsonParser\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 json/clean
+	cd /d E:\GitHub\TinyJsonParser\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 json/clean
 .PHONY : clean
 
 # The main clean target
@@ -102,17 +102,17 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /d E:\GitHub\MyJsonParser\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 json/preinstall
+	cd /d E:\GitHub\TinyJsonParser\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 json/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /d E:\GitHub\MyJsonParser\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 json/preinstall
+	cd /d E:\GitHub\TinyJsonParser\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 json/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /d E:\GitHub\MyJsonParser\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
+	cd /d E:\GitHub\TinyJsonParser\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
 # Help Target
@@ -134,6 +134,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /d E:\GitHub\MyJsonParser\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
+	cd /d E:\GitHub\TinyJsonParser\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

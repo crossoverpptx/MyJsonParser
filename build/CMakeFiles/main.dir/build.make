@@ -52,10 +52,10 @@ RM = D:\CMake\bin\cmake.exe -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = E:\GitHub\MyJsonParser
+CMAKE_SOURCE_DIR = E:\GitHub\TinyJsonParser
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = E:\GitHub\MyJsonParser\build
+CMAKE_BINARY_DIR = E:\GitHub\TinyJsonParser\build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/main.dir/depend.make
@@ -70,48 +70,48 @@ include CMakeFiles/main.dir/flags.make
 
 CMakeFiles/main.dir/main.cpp.obj: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/main.cpp.obj: CMakeFiles/main.dir/includes_CXX.rsp
-CMakeFiles/main.dir/main.cpp.obj: E:/GitHub/MyJsonParser/main.cpp
+CMakeFiles/main.dir/main.cpp.obj: E:/GitHub/TinyJsonParser/main.cpp
 CMakeFiles/main.dir/main.cpp.obj: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\GitHub\MyJsonParser\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/main.dir/main.cpp.obj"
-	D:\envs\mingw-w64-gcc-13.0.1\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/main.cpp.obj -MF CMakeFiles\main.dir\main.cpp.obj.d -o CMakeFiles\main.dir\main.cpp.obj -c E:\GitHub\MyJsonParser\main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\GitHub\TinyJsonParser\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/main.dir/main.cpp.obj"
+	D:\envs\mingw-w64-gcc-10.3.1\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/main.cpp.obj -MF CMakeFiles\main.dir\main.cpp.obj.d -o CMakeFiles\main.dir\main.cpp.obj -c E:\GitHub\TinyJsonParser\main.cpp
 
 CMakeFiles/main.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/main.cpp.i"
-	D:\envs\mingw-w64-gcc-13.0.1\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\GitHub\MyJsonParser\main.cpp > CMakeFiles\main.dir\main.cpp.i
+	D:\envs\mingw-w64-gcc-10.3.1\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\GitHub\TinyJsonParser\main.cpp > CMakeFiles\main.dir\main.cpp.i
 
 CMakeFiles/main.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/main.cpp.s"
-	D:\envs\mingw-w64-gcc-13.0.1\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\GitHub\MyJsonParser\main.cpp -o CMakeFiles\main.dir\main.cpp.s
+	D:\envs\mingw-w64-gcc-10.3.1\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\GitHub\TinyJsonParser\main.cpp -o CMakeFiles\main.dir\main.cpp.s
 
 CMakeFiles/main.dir/json/json.cpp.obj: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/json/json.cpp.obj: CMakeFiles/main.dir/includes_CXX.rsp
-CMakeFiles/main.dir/json/json.cpp.obj: E:/GitHub/MyJsonParser/json/json.cpp
+CMakeFiles/main.dir/json/json.cpp.obj: E:/GitHub/TinyJsonParser/json/json.cpp
 CMakeFiles/main.dir/json/json.cpp.obj: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\GitHub\MyJsonParser\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/main.dir/json/json.cpp.obj"
-	D:\envs\mingw-w64-gcc-13.0.1\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/json/json.cpp.obj -MF CMakeFiles\main.dir\json\json.cpp.obj.d -o CMakeFiles\main.dir\json\json.cpp.obj -c E:\GitHub\MyJsonParser\json\json.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\GitHub\TinyJsonParser\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/main.dir/json/json.cpp.obj"
+	D:\envs\mingw-w64-gcc-10.3.1\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/json/json.cpp.obj -MF CMakeFiles\main.dir\json\json.cpp.obj.d -o CMakeFiles\main.dir\json\json.cpp.obj -c E:\GitHub\TinyJsonParser\json\json.cpp
 
 CMakeFiles/main.dir/json/json.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/json/json.cpp.i"
-	D:\envs\mingw-w64-gcc-13.0.1\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\GitHub\MyJsonParser\json\json.cpp > CMakeFiles\main.dir\json\json.cpp.i
+	D:\envs\mingw-w64-gcc-10.3.1\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\GitHub\TinyJsonParser\json\json.cpp > CMakeFiles\main.dir\json\json.cpp.i
 
 CMakeFiles/main.dir/json/json.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/json/json.cpp.s"
-	D:\envs\mingw-w64-gcc-13.0.1\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\GitHub\MyJsonParser\json\json.cpp -o CMakeFiles\main.dir\json\json.cpp.s
+	D:\envs\mingw-w64-gcc-10.3.1\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\GitHub\TinyJsonParser\json\json.cpp -o CMakeFiles\main.dir\json\json.cpp.s
 
 CMakeFiles/main.dir/json/parser.cpp.obj: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/json/parser.cpp.obj: CMakeFiles/main.dir/includes_CXX.rsp
-CMakeFiles/main.dir/json/parser.cpp.obj: E:/GitHub/MyJsonParser/json/parser.cpp
+CMakeFiles/main.dir/json/parser.cpp.obj: E:/GitHub/TinyJsonParser/json/parser.cpp
 CMakeFiles/main.dir/json/parser.cpp.obj: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\GitHub\MyJsonParser\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/main.dir/json/parser.cpp.obj"
-	D:\envs\mingw-w64-gcc-13.0.1\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/json/parser.cpp.obj -MF CMakeFiles\main.dir\json\parser.cpp.obj.d -o CMakeFiles\main.dir\json\parser.cpp.obj -c E:\GitHub\MyJsonParser\json\parser.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\GitHub\TinyJsonParser\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/main.dir/json/parser.cpp.obj"
+	D:\envs\mingw-w64-gcc-10.3.1\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/json/parser.cpp.obj -MF CMakeFiles\main.dir\json\parser.cpp.obj.d -o CMakeFiles\main.dir\json\parser.cpp.obj -c E:\GitHub\TinyJsonParser\json\parser.cpp
 
 CMakeFiles/main.dir/json/parser.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/json/parser.cpp.i"
-	D:\envs\mingw-w64-gcc-13.0.1\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\GitHub\MyJsonParser\json\parser.cpp > CMakeFiles\main.dir\json\parser.cpp.i
+	D:\envs\mingw-w64-gcc-10.3.1\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\GitHub\TinyJsonParser\json\parser.cpp > CMakeFiles\main.dir\json\parser.cpp.i
 
 CMakeFiles/main.dir/json/parser.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/json/parser.cpp.s"
-	D:\envs\mingw-w64-gcc-13.0.1\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\GitHub\MyJsonParser\json\parser.cpp -o CMakeFiles\main.dir\json\parser.cpp.s
+	D:\envs\mingw-w64-gcc-10.3.1\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\GitHub\TinyJsonParser\json\parser.cpp -o CMakeFiles\main.dir\json\parser.cpp.s
 
 # Object files for target main
 main_OBJECTS = \
@@ -129,7 +129,7 @@ main.exe: CMakeFiles/main.dir/build.make
 main.exe: CMakeFiles/main.dir/linkLibs.rsp
 main.exe: CMakeFiles/main.dir/objects1
 main.exe: CMakeFiles/main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=E:\GitHub\MyJsonParser\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable main.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=E:\GitHub\TinyJsonParser\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable main.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\main.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -141,6 +141,6 @@ CMakeFiles/main.dir/clean:
 .PHONY : CMakeFiles/main.dir/clean
 
 CMakeFiles/main.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" E:\GitHub\MyJsonParser E:\GitHub\MyJsonParser E:\GitHub\MyJsonParser\build E:\GitHub\MyJsonParser\build E:\GitHub\MyJsonParser\build\CMakeFiles\main.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" E:\GitHub\TinyJsonParser E:\GitHub\TinyJsonParser E:\GitHub\TinyJsonParser\build E:\GitHub\TinyJsonParser\build E:\GitHub\TinyJsonParser\build\CMakeFiles\main.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/main.dir/depend
 

@@ -8,8 +8,7 @@ using namespace crossoverpptx::json;
 using namespace std;
 
 int main() {
-    string json_path = "E:/GitHub/MyJsonParser/test.json";
-    ifstream fin(json_path);
+    ifstream fin("E:/GitHub/TinyJsonParser/test.json");
     stringstream ss;
     ss << fin.rdbuf();
     const string &str = ss.str();
@@ -19,11 +18,9 @@ int main() {
 
     cout << v.str() << endl;
 
-    string face = v["data"]["face"];
-    int mid = v["data"]["mid"];
-    string text = v["data"]["vip_label"]["text"];
-    cout << "face : " << face << endl;
-    cout << "mid : " << mid << endl;
-    cout << "text : " << text << endl;
+    bool isLogin = v["data"]["isLogin"];
+    int current_level = v["data"]["level_info"]["current_level"];
+    cout << "isLogin : " << isLogin << endl;
+    cout << "current_level : " << current_level << endl;
     return 0;
 }

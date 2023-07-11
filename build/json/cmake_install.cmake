@@ -1,4 +1,4 @@
-# Install script for directory: E:/GitHub/MyJsonParser/json
+# Install script for directory: E:/GitHub/TinyJsonParser/json
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,6 +34,6 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "D:/envs/mingw-w64-gcc-13.0.1/ucrt64/bin/objdump.exe")
+  set(CMAKE_OBJDUMP "D:/envs/mingw-w64-gcc-10.3.1/ucrt64/bin/objdump.exe")
 endif()
 

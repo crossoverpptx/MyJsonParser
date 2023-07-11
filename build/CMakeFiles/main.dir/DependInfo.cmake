@@ -8,9 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "E:/GitHub/MyJsonParser/json/json.cpp" "CMakeFiles/main.dir/json/json.cpp.obj" "gcc" "CMakeFiles/main.dir/json/json.cpp.obj.d"
-  "E:/GitHub/MyJsonParser/json/parser.cpp" "CMakeFiles/main.dir/json/parser.cpp.obj" "gcc" "CMakeFiles/main.dir/json/parser.cpp.obj.d"
-  "E:/GitHub/MyJsonParser/main.cpp" "CMakeFiles/main.dir/main.cpp.obj" "gcc" "CMakeFiles/main.dir/main.cpp.obj.d"
+  "E:/GitHub/TinyJsonParser/json/json.cpp" "CMakeFiles/main.dir/json/json.cpp.obj" "gcc" "CMakeFiles/main.dir/json/json.cpp.obj.d"
+  "E:/GitHub/TinyJsonParser/json/parser.cpp" "CMakeFiles/main.dir/json/parser.cpp.obj" "gcc" "CMakeFiles/main.dir/json/parser.cpp.obj.d"
+  "E:/GitHub/TinyJsonParser/main.cpp" "CMakeFiles/main.dir/main.cpp.obj" "gcc" "CMakeFiles/main.dir/main.cpp.obj.d"
   )
 
 # Targets to which this target links.

@@ -1,4 +1,4 @@
-# Install script for directory: E:/GitHub/MyJsonParser
+# Install script for directory: E:/GitHub/TinyJsonParser
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,12 +34,12 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "D:/envs/mingw-w64-gcc-13.0.1/ucrt64/bin/objdump.exe")
+  set(CMAKE_OBJDUMP "D:/envs/mingw-w64-gcc-10.3.1/ucrt64/bin/objdump.exe")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("E:/GitHub/MyJsonParser/build/json/cmake_install.cmake")
+  include("E:/GitHub/TinyJsonParser/build/json/cmake_install.cmake")
 
 endif()
 
@@ -51,5 +51,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "E:/GitHub/MyJsonParser/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "E:/GitHub/TinyJsonParser/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

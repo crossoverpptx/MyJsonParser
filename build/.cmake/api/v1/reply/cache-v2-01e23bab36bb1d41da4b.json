@@ -15,7 +15,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/envs/mingw-w64-gcc-13.0.1/ucrt64/bin/addr2line.exe"
+			"value" : "D:/envs/mingw-w64-gcc-10.3.1/ucrt64/bin/addr2line.exe"
 		},
 		{
 			"name" : "CMAKE_AR",
@@ -31,7 +31,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/envs/mingw-w64-gcc-13.0.1/ucrt64/bin/ar.exe"
+			"value" : "D:/envs/mingw-w64-gcc-10.3.1/ucrt64/bin/ar.exe"
 		},
 		{
 			"name" : "CMAKE_BUILD_TYPE",
@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "e:/GitHub/MyJsonParser/build"
+			"value" : "e:/GitHub/TinyJsonParser/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -155,11 +155,11 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
+					"value" : "CXX compiler"
 				}
 			],
-			"type" : "FILEPATH",
-			"value" : "D:/envs/mingw-w64-gcc-13.0.1/ucrt64/bin/g++.exe"
+			"type" : "STRING",
+			"value" : "D:/envs/mingw-w64-gcc-10.3.1/ucrt64/bin/g++.exe"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER_AR",
@@ -175,7 +175,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/envs/mingw-w64-gcc-13.0.1/ucrt64/bin/gcc-ar.exe"
+			"value" : "D:/envs/mingw-w64-gcc-10.3.1/ucrt64/bin/gcc-ar.exe"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER_RANLIB",
@@ -191,7 +191,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/envs/mingw-w64-gcc-13.0.1/ucrt64/bin/gcc-ranlib.exe"
+			"value" : "D:/envs/mingw-w64-gcc-10.3.1/ucrt64/bin/gcc-ranlib.exe"
 		},
 		{
 			"name" : "CMAKE_CXX_FLAGS",
@@ -299,11 +299,11 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
+					"value" : "C compiler"
 				}
 			],
-			"type" : "FILEPATH",
-			"value" : "D:/envs/mingw-w64-gcc-13.0.1/ucrt64/bin/gcc.exe"
+			"type" : "STRING",
+			"value" : "D:/envs/mingw-w64-gcc-10.3.1/ucrt64/bin/gcc.exe"
 		},
 		{
 			"name" : "CMAKE_C_COMPILER_AR",
@@ -319,7 +319,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/envs/mingw-w64-gcc-13.0.1/ucrt64/bin/gcc-ar.exe"
+			"value" : "D:/envs/mingw-w64-gcc-10.3.1/ucrt64/bin/gcc-ar.exe"
 		},
 		{
 			"name" : "CMAKE_C_COMPILER_RANLIB",
@@ -335,7 +335,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/envs/mingw-w64-gcc-13.0.1/ucrt64/bin/gcc-ranlib.exe"
+			"value" : "D:/envs/mingw-w64-gcc-10.3.1/ucrt64/bin/gcc-ranlib.exe"
 		},
 		{
 			"name" : "CMAKE_C_FLAGS",
@@ -447,7 +447,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/envs/mingw-w64-gcc-13.0.1/ucrt64/bin/dlltool.exe"
+			"value" : "D:/envs/mingw-w64-gcc-10.3.1/ucrt64/bin/dlltool.exe"
 		},
 		{
 			"name" : "CMAKE_EDIT_COMMAND",
@@ -587,7 +587,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "E:/GitHub/MyJsonParser/build/CMakeFiles/pkgRedirects"
+			"value" : "E:/GitHub/TinyJsonParser/build/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -659,7 +659,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "E:/GitHub/MyJsonParser"
+			"value" : "E:/GitHub/TinyJsonParser"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -687,7 +687,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/envs/mingw-w64-gcc-13.0.1/ucrt64/bin/ld.exe"
+			"value" : "D:/envs/mingw-w64-gcc-10.3.1/ucrt64/bin/ld.exe"
 		},
 		{
 			"name" : "CMAKE_MAKE_PROGRAM",
@@ -703,7 +703,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/envs/mingw-w64-gcc-13.0.1/ucrt64/bin/mingw32-make.exe"
+			"value" : "D:/envs/mingw-w64-gcc-10.3.1/ucrt64/bin/mingw32-make.exe"
 		},
 		{
 			"name" : "CMAKE_MODULE_LINKER_FLAGS",
@@ -799,7 +799,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/envs/mingw-w64-gcc-13.0.1/ucrt64/bin/nm.exe"
+			"value" : "D:/envs/mingw-w64-gcc-10.3.1/ucrt64/bin/nm.exe"
 		},
 		{
 			"name" : "CMAKE_NUMBER_OF_MAKEFILES",
@@ -827,7 +827,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/envs/mingw-w64-gcc-13.0.1/ucrt64/bin/objcopy.exe"
+			"value" : "D:/envs/mingw-w64-gcc-10.3.1/ucrt64/bin/objcopy.exe"
 		},
 		{
 			"name" : "CMAKE_OBJDUMP",
@@ -843,7 +843,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/envs/mingw-w64-gcc-13.0.1/ucrt64/bin/objdump.exe"
+			"value" : "D:/envs/mingw-w64-gcc-10.3.1/ucrt64/bin/objdump.exe"
 		},
 		{
 			"name" : "CMAKE_PLATFORM_INFO_INITIALIZED",
@@ -967,7 +967,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/envs/mingw-w64-gcc-13.0.1/ucrt64/bin/ranlib.exe"
+			"value" : "D:/envs/mingw-w64-gcc-10.3.1/ucrt64/bin/ranlib.exe"
 		},
 		{
 			"name" : "CMAKE_RC_COMPILER",
@@ -983,7 +983,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/envs/mingw-w64-gcc-13.0.1/ucrt64/bin/windres.exe"
+			"value" : "D:/envs/mingw-w64-gcc-10.3.1/ucrt64/bin/windres.exe"
 		},
 		{
 			"name" : "CMAKE_RC_COMPILER_WORKS",
@@ -1091,7 +1091,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/envs/mingw-w64-gcc-13.0.1/ucrt64/bin/readelf.exe"
+			"value" : "D:/envs/mingw-w64-gcc-10.3.1/ucrt64/bin/readelf.exe"
 		},
 		{
 			"name" : "CMAKE_ROOT",
@@ -1311,7 +1311,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/envs/mingw-w64-gcc-13.0.1/ucrt64/bin/strip.exe"
+			"value" : "D:/envs/mingw-w64-gcc-10.3.1/ucrt64/bin/strip.exe"
 		},
 		{
 			"name" : "CMAKE_VERBOSE_MAKEFILE",
@@ -1351,7 +1351,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "E:/GitHub/MyJsonParser/build"
+			"value" : "E:/GitHub/TinyJsonParser/build"
 		},
 		{
 			"name" : "cppjson_IS_TOP_LEVEL",
@@ -1375,7 +1375,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "E:/GitHub/MyJsonParser"
+			"value" : "E:/GitHub/TinyJsonParser"
 		}
 	],
 	"kind" : "cache",

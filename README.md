@@ -166,7 +166,7 @@ cout << "isLogin : " << isLogin << endl;
 cout << "current_level : " << current_level << endl;
 ```
 
-## Bug
+## Bug处理
 
 ### 1. 解析数组有问题
 
@@ -193,7 +193,7 @@ Json Parser::parse() {
 
 解决：在`Json Parser::parse_array()`函数中将182行的`m_idx++; `注释。
 
-### 2. 读取文件数据失败
+### 2. 读取文件数据失败	
 
 ```cpp
 ifstream fin("./test.json");
@@ -205,8 +205,10 @@ cout << str << endl;
 无输出
 ```
 
-原因：不能使用相对路径，绝对路径没问题。
+原因：不能使用相对路径，绝对路径没问题。`string json_path = "E:/GitHub/TinyJsonParser/test.json";`
 
 ### 3. 中文乱码
 
 936代表GBK，65001代表utf-8。在终端输入 chcp 查看编码，使用 chcp 65001换成 utf-8 编码。
+
+## 缺陷改进

@@ -1,7 +1,7 @@
-set(CMAKE_C_COMPILER "D:/envs/mingw-w64-gcc-13.0.1/ucrt64/bin/gcc.exe")
+set(CMAKE_C_COMPILER "D:/envs/mingw-w64-gcc-10.3.1/ucrt64/bin/gcc.exe")
 set(CMAKE_C_COMPILER_ARG1 "")
 set(CMAKE_C_COMPILER_ID "GNU")
-set(CMAKE_C_COMPILER_VERSION "13.0.1")
+set(CMAKE_C_COMPILER_VERSION "10.3.1")
 set(CMAKE_C_COMPILER_VERSION_INTERNAL "")
 set(CMAKE_C_COMPILER_WRAPPER "")
 set(CMAKE_C_STANDARD_COMPUTED_DEFAULT "17")
@@ -21,11 +21,11 @@ set(CMAKE_C_SIMULATE_VERSION "")
 
 
 
-set(CMAKE_AR "D:/envs/mingw-w64-gcc-13.0.1/ucrt64/bin/ar.exe")
-set(CMAKE_C_COMPILER_AR "D:/envs/mingw-w64-gcc-13.0.1/ucrt64/bin/gcc-ar.exe")
-set(CMAKE_RANLIB "D:/envs/mingw-w64-gcc-13.0.1/ucrt64/bin/ranlib.exe")
-set(CMAKE_C_COMPILER_RANLIB "D:/envs/mingw-w64-gcc-13.0.1/ucrt64/bin/gcc-ranlib.exe")
-set(CMAKE_LINKER "D:/envs/mingw-w64-gcc-13.0.1/ucrt64/bin/ld.exe")
+set(CMAKE_AR "D:/envs/mingw-w64-gcc-10.3.1/ucrt64/bin/ar.exe")
+set(CMAKE_C_COMPILER_AR "D:/envs/mingw-w64-gcc-10.3.1/ucrt64/bin/gcc-ar.exe")
+set(CMAKE_RANLIB "D:/envs/mingw-w64-gcc-10.3.1/ucrt64/bin/ranlib.exe")
+set(CMAKE_C_COMPILER_RANLIB "D:/envs/mingw-w64-gcc-10.3.1/ucrt64/bin/gcc-ranlib.exe")
+set(CMAKE_LINKER "D:/envs/mingw-w64-gcc-10.3.1/ucrt64/bin/ld.exe")
 set(CMAKE_MT "")
 set(CMAKE_COMPILER_IS_GNUCC 1)
 set(CMAKE_C_COMPILER_LOADED 1)
@@ -66,7 +66,7 @@ endif()
 
 
 
-set(CMAKE_C_IMPLICIT_INCLUDE_DIRECTORIES "D:/envs/mingw-w64-gcc-13.0.1/ucrt64/lib/gcc/x86_64-w64-mingw32/13.0.1/include;D:/envs/mingw-w64-gcc-13.0.1/ucrt64/include;D:/envs/mingw-w64-gcc-13.0.1/ucrt64/lib/gcc/x86_64-w64-mingw32/13.0.1/include-fixed")
-set(CMAKE_C_IMPLICIT_LINK_LIBRARIES "mingw32;gcc;moldname;mingwex;kernel32;mcfgthread;kernel32;ntdll;advapi32;shell32;user32;kernel32;mingw32;gcc;moldname;mingwex;kernel32;mcfgthread;kernel32;ntdll")
-set(CMAKE_C_IMPLICIT_LINK_DIRECTORIES "D:/envs/mingw-w64-gcc-13.0.1/ucrt64/lib/gcc/x86_64-w64-mingw32/13.0.1;D:/envs/mingw-w64-gcc-13.0.1/ucrt64/lib/gcc;D:/envs/mingw-w64-gcc-13.0.1/ucrt64/x86_64-w64-mingw32/lib;D:/envs/mingw-w64-gcc-13.0.1/ucrt64/lib")
+set(CMAKE_C_IMPLICIT_INCLUDE_DIRECTORIES "D:/envs/mingw-w64-gcc-10.3.1/ucrt64/lib/gcc/x86_64-w64-mingw32/10.3.1/include;D:/envs/mingw-w64-gcc-10.3.1/ucrt64/include;D:/envs/mingw-w64-gcc-10.3.1/ucrt64/lib/gcc/x86_64-w64-mingw32/10.3.1/include-fixed;D:/envs/mingw-w64-gcc-10.3.1/ucrt64/x86_64-w64-mingw32/include")
+set(CMAKE_C_IMPLICIT_LINK_LIBRARIES "mingw32;gcc;moldname;mingwex;kernel32;mcfgthread;advapi32;shell32;user32;kernel32;mingw32;gcc;moldname;mingwex;kernel32")
+set(CMAKE_C_IMPLICIT_LINK_DIRECTORIES "D:/envs/mingw-w64-gcc-10.3.1/ucrt64/lib/gcc/x86_64-w64-mingw32/10.3.1;D:/envs/mingw-w64-gcc-10.3.1/ucrt64/lib/gcc;D:/envs/mingw-w64-gcc-10.3.1/ucrt64/x86_64-w64-mingw32/lib;D:/envs/mingw-w64-gcc-10.3.1/ucrt64/lib")
 set(CMAKE_C_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")
